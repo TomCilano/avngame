@@ -28,25 +28,21 @@ public class Game {
 
         //create services
         userInputService uiService = new userInputService();
-
         PlayerService pService = new PlayerService();
-
         pService.getAllPlayers();
-
         List<Player> allPlayers = pService.getAllPlayers();
-
         weaponService wService = new weaponService();
-
         weaponInputService wiService = new weaponInputService();
         wService.getAllWeapons();
-
         List<Weapon> allWeapons = wService.getAllWeapons();
-
+        //add variable to services
         playerOne = uiService.choosePlayer(allPlayers);
 
         playerWep = wiService.chooseWeapon(allWeapons);
 
         //   if you don;t call a method on th variable get type it will come back with null. otherwise exception.
+
+        //main program
         System.out.println("Congratulations you are a " + playerOne.getType());
         System.out.println("your have choose a " + playerWep.getWepType());
 
