@@ -17,16 +17,20 @@ public class userInputService {
         Scanner input = new Scanner(System.in);
 
         // this loop continues asking until parameters are met.
-        while (playerOne == null) {
+        while (playerOne == null)
+        {
             String userChoseThis = input.nextLine();
-            for (Player tmp : allPlayers) {
-                if (userChoseThis.equalsIgnoreCase(tmp.getType())) {
+            for (Player tmp : allPlayers)
+            {
+                if (userChoseThis.equalsIgnoreCase(tmp.getType()))
+                {
                     playerOne = tmp;
                 }
             }
             if (playerOne == null) {
                 System.out.println("Choose a proper type");
             }
+
         }
         return playerOne;
     }

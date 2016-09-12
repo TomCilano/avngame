@@ -13,7 +13,7 @@ public abstract class Player {
     public String toString(){
         return getType();
     }
-    //abtraction
+    //abstraction
     private  String type;
 
     // right click -> generate -> getting and setter
@@ -35,7 +35,7 @@ public abstract class Player {
     // made abstract so that when class is extend you must define this method
     public abstract String getType();
 
-      // remove set so no one else could set it
+    // remove set so no one else could set it
     //public void setType(String type) {
     // this.type = type;
     // }
