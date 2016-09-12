@@ -5,12 +5,16 @@ import com.iron.avn.service.PlayerService;
 import com.iron.avn.service.userInputService;
 
 import java.util.List;
-import java.util.Scanner;
+
 
 /**
  * Created by Tom on 9/12/16.
  */
 public class Game {
+    /**
+     * This is how you run the game
+     * @param args
+     */
     public static void main(String[] args){
         System.out.println("Welcome to my game");
         System.out.println("rules go here");
