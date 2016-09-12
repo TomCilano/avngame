@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Game {
     /**
-     * This is how you run the game
+     * This is how you run the game fun right?
      * @param args
      */
     public static void main(String[] args){
